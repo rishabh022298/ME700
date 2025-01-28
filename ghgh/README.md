@@ -1,1 +1,0 @@
-# Assignment # 1 Warm-up: Getting Started + Bisection Method
