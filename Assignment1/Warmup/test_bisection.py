@@ -1,3 +1,7 @@
+'''Please ensure that pytest and numpy packages are installed before running this file. 
+More information is provided in README.md
+'''
+
 import pytest
 from bisection_method import *
 
