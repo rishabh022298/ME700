@@ -27,12 +27,10 @@ Once these requirements have been met then user can move to running tests or tut
 It is a numerical technique which can be used to find a solution of a mathematical function within an interval provided that there exists only one root in the provided interval (It can be used to find multiple roots but it can only search for a single root in a go so if there are multiple roots, then it is advisable to reiterate the interval in a way so that only one root exists in it).
 ### How it works?
 Let's say we have a function $f(x) = 0$ and it has one solution for $x\in[a, b]$. This means $f(x)$ crosses $x$ axis exactly once at $x = x_0$ in the interval $[a,b]$ as shown in the following figure (consider horizontal red line to be $x$-axis.). From this, it can be interpreted that $f(x_0) = 0$ where $x = x_0 \in [a,b]$.
-<div style="text-align: center;">
-<figure>
-<img src="fxdes.png" alt="Description" width="320" height="300">
-<figcaption>Figure 1: A function f(x) with exactly one root in the interval [a,b].</figcaption>
-</figure>
-</div>
+<p align="center">
+  <img src="fxdes.png" alt="Description" width="320" height="300">
+</p>
+<p align="center">Figure 1: A function f(x) with exactly one root in the interval [a,b].</p>
 
 Bisection method takes these intervals as a guess and seeks the solution $x_0$ iteratively within a defined tolerance ($\epsilon$).
 ### Algorithm
@@ -185,12 +183,10 @@ Pitot tube is a device that is used to measure the velocity of an incompressible
 $$P_m + \frac{1}{2}\rho V_m^2 + \rho g z_m = P_n + \frac{1}{2}\rho V_n^2 + \rho g z_n$$
 where, $P$ represent pressure, $\rho$ represents density, $V$ is velocity, $g$ is acceleation due to gravity and $z$ is the height from a datum. The subscripts $m$ and $n$ refer to the parameters at point $m$ and $n$ respectively.\
 For a horizontal pipe, $z_m = z_n$. Now, pitot tube works in such a way that it can be used to at least find the difference between the stagnation pressure (where velocity is $0$) and the static pressure (pressure in flowing fluid).
-<div style="text-align: center;">
-<figure>
-<img src="Pitot_tube_manometer.png" alt="Description" width="200" height="200">
-<figcaption>Figure 2: Principle of working of a pitot tube using a manometer.</figcaption>
-</figure>
-</div>
+<p align="center">
+  <img src="Pitot_tube_manometer.png" alt="Description" width="200" height="200">
+</p>
+<p align="center">Figure 2: Principle of working of a pitot tube using a manometer.</p>
 
 Let's represent stagnationation pressure by $p_t$ and static pressure by $p_s$ as shown in Figure 2. At the point where we are measuring the static pressure, the velocity will be zero and let's say the velocity where we are measuring the static pressure is $u$, then Bernoulli's equation reduces to:
 $$p_t = p_s + \frac{\rho u^2}{2}$$
@@ -201,12 +197,10 @@ Let's take a cantilever beam of length $L$, and let's say that a load $P$ is act
 $$\delta_{A} = \frac{PA^2(3L - A)}{6EI}$$
 where, $E$ is the Young's modulus of the beam and $I$ is the second moment of area along the axis that is perpendicular to the direction in which load is applied. For a rectangular beam with width $w$ and height $h$, $I$ can be calculated as:
 $$I = \frac{wh^3}{12}$$
-<div style="text-align: center;">
-<figure>
-<img src="canti.png" alt="Description" width="2400" height="125">
-<figcaption>Figure 3: A cantilever beam undergoing deformation due to a point load.</figcaption>
-</figure>
-</div>
+<p align="center">
+  <img src="canti.png" alt="Description" width="2400" height="125">
+</p>
+<p align="center">Figure 3: A cantilever beam undergoing deformation due to a point load.</p>
 
 The implementation of this example in the notebook shows that how we can calculate the distance $A$ using bisection method if other parameters are given. It has to be noted that the limits on the interval cannot be outside $[0, L]$. If bisection method is giving a result which lies either outside this or it is not converging then there might have been a mistake while selecting appropriate parameters. For more information about cantilever or other beams, please visit [Wikipedia](https://en.wikipedia.org/wiki/Deflection_(engineering)).
 
